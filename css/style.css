@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Rubik', 'Microsoft JhengHei', sans-serif;
+    color: #333;
+    background: #ccc;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 640px;
+    padding: 10px 30px;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 300;
+    color: #487
+}
+
+p {
+    margin: 0 0 15px;
+}
+
+li {
+    list-style: none;
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ccc;
+    font: 300 16px 'Rubik', 'Microsoft JhengHei', sans-serif;
+}
+
+input:focus {
+    border-color: #487;
+    outline: none;
+}
+
+.btn {
+    background: #487;
+    border: none;
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+    color: white;
+    font: 300 14px 'Rubik', 'Microsoft JhengHei', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.clear-all-btn {
+    float: right;
+    margin-top: 10px;
+    font-size: 14px;
+    background: none;
+    border: none;
+    width: 50px;
+    height: 30px;
+    color: #487;
+}
+
+.clear-all-btn:focus {
+    outline: none;
+}
+
+.toggle-icon {
+    margin-bottom: 10px;
+    font-size: 16px;
+    background: none;
+    border: none;
+    padding: 3px;
+    color: #487;
+}
+
+.toggle-icon:focus {
+    outline: none;
+}
+
+.btn:hover {
+    background: rgb(12, 112, 112);
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.far,
+.fas {
+    display: inline-block;
+    border: none;
+    color: #487;
+    cursor: pointer;
+    background: none;
+    opacity: 0.5;
+}
+
+.far,
+.fas:hover {
+    opacity: 1;
+}
+
+.far,
+.fas:focus {
+    outline: none;
+}
+
+
+/* todo-content */
+
+.todo-content {
+    padding: 50px 30px;
+    margin: 30px 0;
+    background: white;
+    border-radius: 3px;
+    box-shadow: 3px 3px 20px -5px rgba(0, 0, 0, .1);
+}
+
+.todo-content .titile {
+    margin: 0 0 30px;
+}
+
+
+/* list-control */
+
+.list-control li {
+    position: relative;
+    height: 40px;
+    counter-increment: num;
+    overflow: hidden;
+    padding: 0 0 20px 30px;
+    border-bottom: 1px solid #ccc;
+    line-height: 40px;
+}
+
+.list-control li::before {
+    content: counter(num);
+    position: absolute;
+    width: 15px;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    background: #487;
+    padding: 1px 5px;
+    top: 0;
+    left: 0;
+}
+
+.list-control .list-name {
+    position: absolute;
+    float: left;
+}
+
+.list-control .far,
+.list-control .fas {
+    float: right;
+    margin-left: 20px;
+    line-height: 40px;
+}
+
+
+/* form-control */
+
+.form-control {
+    position: relative;
+    margin: 20px -5px;
+    overflow: hidden;
+}
+
+.form-control .col {
+    float: left;
+    width: 20%;
+    padding: 0 5px;
+}
+
+.form-control .col.input-bar {
+    width: 80%;
+}

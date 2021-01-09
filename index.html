@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>ToDoList</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="todo-content">
+            <!-- title -->
+            <div class="title">
+                <h1>ToDoList</h1>
+            </div>
+            <div class="todo-list">
+                <!-- form -->
+                <div class="form-control">
+                    <div class="col input-bar">
+                        <input type="text" id="addInput">
+                    </div>
+                    <div class="col">
+                        <button type="button" id="addBtn" class="btn">Add</button>
+                    </div>
+                </div>
+
+                <button type="button" id="toggleBtn" class="toggle-icon" title="隱藏列表"><i class="fas fa-chevron-down"></i></button>
+                <!-- content -->
+                <div class="list-control">
+                    <ul class="list">
+                        <!-- <li> -->
+                        <!-- <span class="list-name">iphone</span> -->
+                        <!-- <button class="btn-icon remove"><i class="btn-icon far fa-trash-alt"></i></button>
+                                <button class="btn-icon up"><i class="fas fa-angle-double-up"></i></button>
+                                <button class="btn-icon down"><i class="fas fa-angle-double-down"></i></button> -->
+                        <!-- </li> -->
+                    </ul>
+                </div>
+                <div class="col-clear">
+                    <button type="button" id="clearAllBtn" class="clear-all-btn" title="全部清除"><i class="far fa-trash-alt"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
